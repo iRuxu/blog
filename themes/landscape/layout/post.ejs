@@ -1,0 +1,18 @@
+<%- partial('_partial/article', {post: page, index: false}) %>
+<div id="container"></div>
+<link
+    rel="stylesheet"
+    href="https://imsun.github.io/gitment/style/default.css"
+/>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        owner: "iRuxu",
+        repo: "blog",
+        oauth: {
+            client_id: "a9a2af125fde4045d585",
+            client_secret: "7af9c300b7fc5fd7a8d9a5df6f2218ac157a6f15",
+        },
+    });
+    gitment.render("container");
+</script>
